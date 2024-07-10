@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>베트남  여행 가이드 = 10709 이관우</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .navbar-brand {
+      font-size: 24px; /* 폰트 사이즈 조정 */
+      font-weight: bold; /* 폰트 굵기 조정 */
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+    }
+    .navbar {
+      margin-bottom: 30px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .bg-light {
+      background-color: #red !important;
+    }
+    .bg-primary {
+      background-color: #red !important;
+      color: white;
+    }
+    .bg-secondary {
+      background-color: #6c757d !important;
+      color: white;
+    }
+    .bg-success {
+      background-color: #28a745 !important;
+      color: white;
+    }
+    .bg-info {
+      background-color: #17a2b8 !important;
+      color: white;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .carousel-inner img,
+    .attraction-item img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-body img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+    }
+    .attraction-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .btn-details {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- 내비게이션 바 - 항목을 변경하거나 추가할 수 있습니다 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">베트남 여행 가이드 - 10709 이관우</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#overview">개요</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#history">역사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#attractions">관광지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tips">여행 팁</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 개요 섹션 -->
+  <section id="overview" class="section bg-primary">
+    <div class="container">
+      <h2 class="text-center">개요</h2>
+      <p>베트남은 베트남은 동남아시아에 위치한 다문화적이고 매력적인 나라입니다. 이 나라는 긴 역사와 풍부한 문화, 맛있는 음식으로 유명합니다.
+
+역사와 문화.</p>
+      <!-- 이미지 슬라이드 - 이미지를 변경하려면 src 속성 값을 수정하세요 -->
+      <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/11.jpg" class="d-block w-100" alt="베트남 개요 1">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/16.jpg" class="d-block w-100" alt="베트남 개요 2">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/13.jpg" class="d-block w-100" alt="베트남 개요 3">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/14.jpg" class="d-block w-100" alt="베트남 개요 4">
+          </div>
+          <div class="carousel-item">
+            <!-- 여기에 이미지 파일명을 추가하세요 -->
+            <img src="images/15.jpg" class="d-block w-100" alt="베트남 개요 5">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#overviewCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">이전</span>
+        </a>
+        <a class="carousel-control-next" href="#overviewCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">다음</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 역사 섹션 -->
+  <section id="history" class="section bg-secondary">
+    <div class="container">
+      <h2 class="text-center">역사</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/1.jpg" alt="베트남 역사 1" class="img-fluid">
+            <p>고대 시기부터는 베트남의 여러 나라들이 자리를 잡으려고 하기 시작했습니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/2.jpg" alt="베트남은 역사 2 " class="img-fluid">
+            <p>베트남은 이제 통치 체제가 정비되고 외부 세력의 간섭을 슬슬 받기 시작했습니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/3.jpg" alt="베트남 역사 3" class="img-fluid">
+            <p>베트남은 결국 남북으로 분단되었고 남북전쟁이 발발했습니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#historyModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 역사 1 -->
+  <div class="modal fade" id="historyModal1" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel1">역사 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/1.jpg" alt="일본 역사 1" class="img-fluid">
+          <p>베트남은 938년 박당 전투에서 응오꾸옌이 오대 십국의 하나인 남한과 싸워 이겨 독립하였습니다. 이후 1406년에 다시 명나라에 복속되었다가 1428년, 레 러이와 응웬 짜이가 다시 명나라를 몰아내고 레 왕조를 세운 후, 베트남 왕조 중 가장 오랫동안 집권하면서 정부 체제를 개혁했습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 2 -->
+  <div class="modal fade" id="historyModal2" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel2">역사 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/2.jpg" alt="일본 역사 2" class="img-fluid">
+          <p>베트남은 유교를 정비하는 등 베트남만의 전통 문화를 만들어 내고, 남부까지 영토를 확장하면서 베트남의 황금기를 열었습니다. 1802년, 프랑스의 세력에 힘입어 응우옌 왕조가 건국되었으나 이내 프랑스의 식민정책에 의해 프랑스령 인도차이나의 일부가 되었습니다. 프랑스는 제2차 세계 대전 때까지 프랑스령 인도차이나의 한 국가로 베트남을 식민지로서 통치하였습니다. 그러나 프랑스는 종전 후에 다시 군대를 파견하였고 이는 호찌민이 지도하는 민족 세력인 비엣민과 남북으로 대립하게 됩니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 역사 3 -->
+  <div class="modal fade" id="historyModal3" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="historyModalLabel3">역사 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/3.jpg" alt="일본 역사 3" class="img-fluid">
+          <p>베트남은 소련과 중국 등이 지지하는공산주의 진영의 북베트남과 미국이 지지하는 민주주의 진영의 남베트남으로 분단되었고 1954년부터 1975년까지 각각의 분단된 베트남은 남베트남 전쟁을 치루었습니다. 결국 남베트남이 패망함으로써 북베트남이 통일 베트남을 이루었습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 관광지 섹션 -->
+  <section id="attractions" class="section bg-success">
+    <div class="container">
+      <h2 class="text-center">관광지</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/하롱베이.jpg" alt="베트남 관광지 1" class="img-fluid">
+            <p>베트남의 유명한 관광지 중 첫 번째는 하롱베이입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal1">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/달랏.jpg" alt="베트남 관광지 2" class="img-fluid">
+            <p>베트남의 유명 명소 중 두 번째는 달랏입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal2">상세보기</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="attraction-item">
+            <img src="images/호이안2.jpg" alt="베트남 관광지 3" class="img-fluid">
+            <p>베트남의 유명한 곳 중 세 번째는 호이안입니다.</p>
+            <a href="#" class="btn btn-primary btn-details" data-toggle="modal" data-target="#attractionModal3">상세보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 모달 - 관광지 1 -->
+  <div class="modal fade" id="attractionModal1" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel1">관광지 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/하롱베이.jpg" alt="베트남 관광지 1" class="img-fluid">
+          <p>하롱베이는 세계 자연 유산으로 등재된 하롱베이는 그의 아름다운 섬과 암반으로 유명합니다. 에메랄드 빛 바다 위에 수십 개의 작은 섬들이 펼쳐져 있어 멋진 경치를 자랑합니다. 이 지역은 생태적으로 다양성을 자랑하는데, 열대 기후 및 대양 생태계, 해안 생태계 등의 지질적 다양성이 곧 생물학적 다양성으로 연결되어 14개 식물 종과 60개 동물 종의 서식지가 되었습니다. 하롱 베이의 기후는 열대 습윤 기후이고 실질적으로 계절이 둘밖에 없습니다. 덥고 습한 여름과 건조하고 선선한 겨울이 그 두 계절입니다. 평균 기온은 15~25°C, 연간 강우량은 2,000~2,200mm. 할롱만에서 가장 유명한 것들이 이 1969개에 이르는 도서들의 모습과 이들이 만들어낸 경치입니다. 이 거대한 규모의 석회암 카르스트 지형들은 석회암이 풍화 작용으로 깎여나가 현재와 같은 모습이 되었습니다. 이 지역의 석회암은 2천만 년 이상 열대 습지 기후에 노출되어 카르스트 지형화되었습니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 2 -->
+  <div class="modal fade" id="attractionModal2" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel2">관광지 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/달랏.jpg" alt="베트남 관광지 2" class="img-fluid">
+          <p>달랏은 베트남의 중부 고원에 위치한 달랏은 시원한 기후와 아름다운 자연 경관으로 유명합니다. 잘 가꾸어진 정원과 호수가 있는 도시로, 휴양과 신혼여행지로 인기가 있습니다. 달랏은 작은 산들이 소형 분지를 서너개 형성하고 그 사이에 호수도 존재하며 이 분지들이 모여 하나의 도시를 형성하는데, 그래서 오토바이가 시원하게 속도를 낼 수 있는 길이 잘 없고 업앤다운이 많습니다. 또한 택시를 타자면 물론 금액이 매우 저렴하나 매번 기본요금 수준이기 때문에 오히려 기다리는 시간이 감질나는 편입니다.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 모달 - 관광지 3 -->
+  <div class="modal fade" id="attractionModal3" tabindex="-1" role="dialog" aria-labelledby="attractionModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attractionModalLabel3">관광지 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/호이안2.jpg" alt="베트남 관광지 3" class="img-fluid">
+          <p>호이안은 그의 고대 마을과 아름다운 강물이 얽혀 있는 도시로, 유니콘 세계 유산으로 등재되었습니다. 전통적인 건축물과 독특한 문화적 매력이 돋보입니다. 예전부터 참파 왕국의 중요한 항구 중 하나였으며 이는 응우옌 왕조 시대에서도 마찬가지였습니다. 특히 15~18세기는 호이안의 황금기로 중국, 일본, 서양에서 각종 물자가 들어오고 나가는 국제무역항으로 번성했습니다. 그러나 19세기말 이후로 상황이 변했는데 프랑스령 인도차이나가 인근의 다낭을 식민지의 주요 거점도시로 성장시켰고, 베트남 전쟁때에는 미군의 공군기지와 해병대 사령부가 다낭에 들어서는 등 다낭이 중요한 거점도시로 빠르게 성장해버리면서 상대적으로 호이안은 쇠퇴했기 때문입니다. 다만 이런 이유로 과거 번영했던 무역항 시절의 모습이 잘 보존될 수 있었고 1999년에는 유네스코 세계유산에 지정되었습니다..</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 여행 팁 섹션 -->
+  <section id="tips" class="section bg-info">
+    <div class="container">
+      <h2 class="text-center">여행 팁</h2>
+      <ul>
+        <li>방문하기 좋은 시기: 봄 (2월~4월)과 가을 (8월~10월).</li>
+        <li>언어: 베트남어</li>
+        <li>통화: 동(VND)</li>
+        <li>교통: 베트남은 거의 4,600만대 정도로 오토바이가 아주 많다. 교통의 대부분이 오토바이로 이루어짐</li>
+      </ul>
+      <div class="text-center">
+        <!-- 여기에 YouTube 동영상 링크를 추가하세요 -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4VOAd1eW5HM?si=ukGeJRJRSl8poQMq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+  </section>
+
+  <footer class="text-center">
+    <p>&copy; 2024 베트남 여행 가이드. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
